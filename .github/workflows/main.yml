@@ -25,5 +25,4 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run:
           gh release create ${{ github.ref_name }} \
-            --title "Release ${{ github.ref_name }}" \
             "Upload libs"

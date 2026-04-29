@@ -19,6 +19,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh run download 25118041273 -n java_libs
+      - name: Check files
+        run: ls -a
 
       - name: Create Release
         env:
